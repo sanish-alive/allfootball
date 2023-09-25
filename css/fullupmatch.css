@@ -1,0 +1,471 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define root variables */
+:root {
+    --main-bg-color: rgb(0, 0, 0);
+}
+
+/* Set the background color of the body to black */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 8px solid #ccc; /* Add a grey border line at the bottom */
+    display: flex;
+    align-items: center;
+    
+}
+
+.header p a {
+    text-decoration: none;
+    margin: auto 0vw auto 10vw;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    padding: 2vw 1vw;
+}
+
+li a,
+p {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: none;
+}
+
+nav .reg ul li a {
+    color: #ffffff;
+}
+
+nav .reg ul {
+    margin: auto 8vw auto 30vw;
+}
+
+nav .reg ul li a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #5500ff;
+}
+
+/* Add competition link styles */
+.match-banner .competition-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Match banner styles */
+.match-banner {
+    background-color: #403e4a;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    text-align: center; /* Center-align the text */
+}
+
+.match-banner .competition-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding-left: 18px;
+}
+
+.match-banner .team {
+    display: flex;
+    flex-direction: row; /* Stack the logo and team name vertically */
+    align-items: center;
+    margin: 10px 0; /* Add margin to separate teams */
+}
+
+.match-banner .team-logo {
+    width: 100px; /* Increase logo size */
+    height: 100px; /* Increase logo size */
+    margin: 0 20px; /* Add spacing between logo and team name */
+}
+
+.match-banner .team-info {
+    display: flex;
+    align-items: center;
+}
+
+.match-banner .team-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px; /* Add margin to separate the team name and logo */
+}
+
+
+.match-banner .vs {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    background-color: #222; /* Add a background color to the time */
+    border-radius: 5px; /* Add rounded corners to the time */
+}
+
+/* Styles for the lineup section */
+/* Styles for the lineup section */
+.lineup {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.lineup h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.team-links{
+    padding: 20px;
+}
+
+.team-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 70px;
+    font-size: 18px;
+    transition: color 0.3s;
+    
+
+}
+
+.team-links a:hover {
+    color: #ff6600; /* Change the color on hover */
+}
+
+.football-ground {
+    background-image: url('../images/pitch.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.football-ground a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.football-ground img {
+    width: 3cm;
+    max-width: 3cm;
+    height: 3cm;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.football-ground span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Styles for Goalkeeper */
+.football-ground .goalkeeper {
+    flex: 0 0 2.5cm; /* Set the width to 2.5cm */
+    max-width: 2.5cm; /* Set the maximum width to 2.5cm */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Styles for Defenders */
+.football-ground .defender {
+    flex: 0 0 2.5cm; /* Set the width to 2.5cm */
+    max-width: 2.5cm; /* Set the maximum width to 2.5cm */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Styles for Midfielders */
+.football-ground .midfielder {
+    flex: 0 0 2.5cm; /* Set the width to 2.5cm */
+    max-width: 2.5cm; /* Set the maximum width to 2.5cm */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Styles for Forwards */
+.football-ground .forward {
+    flex: 0 0 2.5cm; /* Set the width to 2.5cm */
+    max-width: 2.5cm; /* Set the maximum width to 2.5cm */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define root variables */
+:root {
+    --main-bg-color: rgb(0, 0, 0);
+}
+
+/* Set the background color of the body to black */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 8px solid #ccc; /* Add a grey border line at the bottom */
+    display: flex;
+    align-items: center;
+    
+}
+
+.header p a {
+    text-decoration: none;
+    margin: auto 0vw auto 10vw;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    padding: 2vw 1vw;
+}
+
+li a,
+p {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: none;
+}
+
+nav .reg ul li a {
+    color: #ffffff;
+}
+
+nav .reg ul {
+    margin: auto 8vw auto 30vw;
+}
+
+nav .reg ul li a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #5500ff;
+}
+
+/* Add competition link styles */
+.match-banner .competition-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Match banner styles */
+.match-banner {
+    background-color: #403e4a;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align content horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    text-align: center; /* Center-align the text */
+}
+
+.match-banner .competition-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.match-banner .team {
+    display: flex;
+    flex-direction: row; /* Stack the logo and team name vertically */
+    align-items: center;
+    margin: 10px 0; /* Add margin to separate teams */
+}
+
+.match-banner .team-logo1 {
+    width: 170px; /* Increase logo size */
+    height: 100px; /* Increase logo size */
+    margin: 0px; /* Add spacing between logo and team name */
+}
+
+.match-banner .team-logo2 {
+    width: 90px; /* Increase logo size */
+    height: 100px; /* Increase logo size */
+    margin: 0 20px; /* Add spacing between logo and team name */
+}
+
+.match-banner .team-info {
+    display: flex;
+    align-items: center;
+}
+
+.match-banner .team-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px; /* Add margin to separate the team name and logo */
+}
+
+
+.match-banner .vs {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    border-radius: 5px; /* Add rounded corners to the time */
+    
+}
+
+    /* Styles for the lineup section */
+.lineup {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.lineup h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.football-ground {
+    background-image: url('../images/pitch.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.football-ground a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.football-ground img {
+    width: 3cm;
+    max-width: 3cm;
+    height: 3cm;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.football-ground span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Styles for Goalkeeper */
+.football-ground .goalkeeper {
+    flex: 0 0 calc(25% - 20px); /* Set the width to 25% of the container */
+    max-width: calc(25% - 20px); /* Set the maximum width to 25% of the container */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Styles for Defenders */
+.football-ground .defender {
+    flex: 0 0 calc(25% - 20px); /* Set the width to 25% of the container */
+    max-width: calc(25% - 20px); /* Set the maximum width to 25% of the container */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Styles for Midfielders */
+.football-ground .midfielder {
+    flex: 0 0 calc(25% - 20px); /* Set the width to 25% of the container */
+    max-width: calc(25% - 20px); /* Set the maximum width to 25% of the container */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Styles for Forwards */
+.football-ground .forward {
+    flex: 0 0 calc(25% - 20px); /* Set the width to 25% of the container */
+    max-width: calc(25% - 20px); /* Set the maximum width to 25% of the container */
+    height: 3cm; /* Set the height to 3cm */
+}
+
+/* Additional styles to separate the positions */
+.football-ground .position-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+

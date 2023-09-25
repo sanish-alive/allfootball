@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define root variables */
+:root {
+    --main-bg-color: rgb(0, 0, 0);
+}
+
+/* Set the background color of the body to black */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 8px solid #ccc; /* Add a grey border line at the bottom */
+    display: flex;
+    align-items: center;
+}
+
+.header p a {
+    text-decoration: none;
+    margin: auto 0vw auto 10vw;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    padding: 0 1vw;
+}
+
+li a,
+p {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: none;
+}
+
+nav .reg ul li a {
+    color: #ffffff;
+}
+
+nav .reg ul {
+    margin: auto 8vw auto 30vw;
+}
+
+nav .reg ul li a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #5500ff;
+}
+
+/* Join section styles */
+.join {
+    background-color: rgb(211, 203, 203);
+    height: 22vh;
+}
+
+.join p {
+    color: black;
+    text-align: center;
+    padding-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.join a {
+    text-decoration: none;
+    color: black;
+    margin: auto 42vw;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 1.3vh;
+    display: block;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 240px;
+}
+
+.join a:hover {
+    background-color: black;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 20px rgb(4, 10, 127);
+}
+
+/* Content section styles */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Enable flex wrap */
+    align-items: center;
+    padding: 40px;
+}
+
+body p{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content p {
+    color: white;
+    padding-bottom: 50px;
+}
+
+.match-box {
+    background-color: #403e4a;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    margin-right: 30px;
+    transition: transform 0.3s ease; /* Add a transition for smooth movement */
+}
+
+
+.team {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.team img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.vs {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: black;
+}
+
+.date-time {
+    text-align: right;
+    font-size: 14px;
+}
+
+span {
+    color: #fff;
+    font-weight: 700;
+}
+
+.match-box:hover {
+transform: translateY(-5px); 
+}
