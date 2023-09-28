@@ -45,7 +45,7 @@
                 <input type="file" id="logo" name="logo" accept="image/*" required>
             </div>
 
-            <button type="submit">Add Team</button>
+            <input type="submit" name="submit" value='submit'/>
         </form>
     </div>
 </body>
